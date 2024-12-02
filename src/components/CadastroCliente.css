@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(91, 91, 185, 0.781);
+}
+
+.input-cliente {
+  margin: 0;
+  margin-top: 190px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  margin-left: 500px;
+  gap: 15px;
+  background-color: #333;
+}
+
+.input-cliente h1 {
+  margin-bottom: 1px;
+  color: #ffffff;
+  font-size: 33px;
+  text-shadow: 5px 2px 5px #000000;
+}
+
+.input-cliente input {
+    width: 225px;
+}
+
+.input-cliente button {
+    width: 225px;
+}

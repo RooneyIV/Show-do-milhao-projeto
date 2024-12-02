@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  margin: 100px auto; /* Adiciona margem superior para afastar da navbar */
+  color: white;
+}
+
+.container-quiz select {
+  width: 100px;
+}
+
+.container-quiz button {
+  width: 200px;
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content button {
+  width: 100px;
+}
+
+.alternativas-perg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-left: 250px;
+  gap: 8px;
+  padding: 20px;
+  background-color: #333;
+  width: 800px;
+}
+
+.alternativas-perg h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.alternativas-perg button {
+  width: 200px;
+  background-color: rgba(57, 57, 206, 0.397);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.alternativas-perg button:hover {
+  background-color: rgba(57, 57, 206, 0.7); /* Altera a cor de fundo ao passar o mouse */
+  box-shadow: 0px 0px 15px 0px white;
+}
+
+.alternativas-perg button.correta {
+  background-color: rgba(57, 206, 57, 0.5); /* Leve tom de verde */
+  color: #fff;
+}
+
+.alternativas-perg button.correta:hover {
+  background-color: rgba(57, 206, 57, 0.7); /* Verde mais forte ao passar o mouse */
+  box-shadow: 0px 0px 15px 0px green;
+}
+
+.alternativas-perg button.incorreta {
+  background-color: rgba(206, 57, 57, 0.5); /* Leve tom de vermelho */
+  color: #fff;
+}
+
+.alternativas-perg button.incorreta:hover {
+  background-color: rgba(206, 57, 57, 0.7); /* Vermelho mais forte ao passar o mouse */
+  box-shadow: 0px 0px 15px 0px red;
+}
+
+.skip-button {
+  margin-top: 0px;
+  margin-left: 520px;
+  padding: 10px 20px;
+  background-color: #ffa500;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 400px;
+  right: 890px;
+}
+
+.skip-button:hover {
+  background-color: #ff8800;
+  box-shadow: 0px 0px 10px 0px #ffa500;
+}
+
+.finalizar-button {
+  background-color: #ff4d4d; /* Vermelho para indicar ação de finalização */
+  color: #fff; /* Texto branco */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho do texto */
+  font-weight: bold; /* Texto em negrito */
+  cursor: pointer; /* Cursor de clique */
+  margin-top: 10px; /* Espaço acima */
+  position: absolute;
+  right: 300px;
+  bottom: 200px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.finalizar-button:hover {
+  background-color: #e63939; /* Vermelho mais escuro no hover */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+.finalizar-button:active {
+  background-color: #cc3333; /* Vermelho ainda mais escuro no clique */
+  transform: scale(1); /* Remove o aumento */
+}
+
+.finalizar-button:disabled {
+  background-color: #d3d3d3; /* Cinza para estado desativado */
+  cursor: not-allowed; /* Cursor indicando desativado */
+}
